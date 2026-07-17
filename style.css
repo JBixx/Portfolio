@@ -348,7 +348,7 @@ ul {
 .btn-green {
   background: var(--green);
   color: #fff;
-  box-shadow: 0 8px 20px rgba(0, 179, 126, 0.28);
+  box-shadow: 0 8px 22px rgba(0, 179, 126, 0.3);
 }
 
 .btn-green:hover {
