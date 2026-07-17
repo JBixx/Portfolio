@@ -89,5 +89,5 @@ Projet personnel / académique (Akieni Academy). Libre de t’en inspirer. Merci
 
 ---
 
-Fait avec soin a Brazzaville.
+Fait avec soin à Brazzaville.
 
