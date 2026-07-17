@@ -86,3 +86,8 @@ Portfolio/
 ## Licence
 
 Projet personnel / académique (Akieni Academy). Libre de t’en inspirer. Merci juste de ne pas le republier tel quel comme le tien.
+
+---
+
+Fait avec soin a Brazzaville.
+
