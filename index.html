@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Hirwa Jean Baptiste, développeur Full-Stack basé à Brazzaville, République du Congo.">
+    <meta name="theme-color" content="#00b37e">
+    <title>Hirwa Jean Baptiste | Développeur Full-Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || (!t && matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+</head>
+<body>
+
+    <div id="loading-screen" aria-hidden="true">
+        <div class="loader-mark">JB</div>
+        <div class="loader-line"></div>
+    </div>
+
+    <div class="nav-overlay" id="nav-overlay" hidden></div>
+
+    <header class="header">
+        <nav class="nav" aria-label="Navigation principale">
+            <a href="#accueil" class="logo">Hirwa<span>JB</span></a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Activer le mode sombre" title="Mode clair / sombre">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                </button>
+                <a href="#contact" class="nav-cta"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Contact</a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+                    <span class="hamburger" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="accueil">
+            <div class="container hero-inner">
+                <div class="hero-copy reveal">
+                    <p class="hero-hello">Je m’appelle Hirwa,</p>
+                    <h1>
+                        Développeur <em>Full-Stack</em><br>
+                        | Étudiant en <em>GL</em>
+                    </h1>
+                    <p class="hero-lead">
+                        Je conçois des applications web modernes et performantes, de la conception à la mise en production.
+                        Basé à Brazzaville, République du Congo, ouvert aux opportunités remote.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projets" class="btn btn-green">Voir mes projets <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#parcours" class="btn btn-ghost">Mon parcours</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div>
+                            <strong>2+</strong>
+                            <span>Ans d’expérience</span>
+                        </div>
+                        <div>
+                            <strong>15+</strong>
+                            <span>Projets livrés</span>
+                        </div>
+                        <div>
+                            <strong>5</strong>
+                            <span>Prix &amp; distinctions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <img class="hero-portrait" src="images/JBProfil-removebg-preview.png" alt="Portrait de Hirwa Jean Baptiste">
+                    <div class="float-icon float-1" aria-hidden="true"><i class="fa-brands fa-react"></i></div>
+                    <div class="float-icon float-2" aria-hidden="true"><i class="fa-brands fa-js"></i></div>
+                    <div class="float-icon float-3" aria-hidden="true"><i class="fa-brands fa-python"></i></div>
+                    <div class="float-icon float-4" aria-hidden="true"><i class="fa-brands fa-node-js"></i></div>
+                    <div class="float-icon float-5" aria-hidden="true"><i class="fa-brands fa-java"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="apropos">
+            <div class="container about-layout">
+                <div class="about-media reveal">
+                    <div class="about-frame" aria-hidden="true"></div>
+                    <div class="about-img">
+                        <img src="images/IMG-20250405-WA0015.jpg" alt="Hirwa Jean Baptiste">
+                    </div>
+                    <div class="about-badge">
+                        <strong>2+</strong>
+                        <span>Ans<br>d’expérience</span>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <p class="eyebrow eyebrow-accent">À propos</p>
+                    <h2>Je construis des solutions numériques utiles.</h2>
+                    <p>
+                        Développeur Full-Stack et étudiant en Génie Logiciel au CFI-CIRAS, je conçois des applications
+                        qui intègrent l’intelligence artificielle et l’automatisation.
+                    </p>
+                    <p>
+                        Lauréat du Prix Denis Sassou Nguesso 2024-2025 et vainqueur de plusieurs hackathons
+                        internationaux, dont l’Océan Hackathon présenté en France. Freelance actif auprès
+                        de clients à l’étranger.
+                    </p>
+                    <ul class="about-points">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Licence GL au CFI-CIRAS (2023–2026)</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Stack : React, Node.js, FastAPI, Java, PostgreSQL</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Tech Lead à Akieni Academy</li>
+                    </ul>
+                    <a href="#parcours" class="btn btn-green">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="container skills-block" id="competences">
+                <div class="section-head section-head-sm reveal">
+                    <p class="eyebrow eyebrow-accent">Compétences</p>
+                    <h3>Mes savoir-faire techniques</h3>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-brands fa-html5" aria-hidden="true"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-label"><span>HTML / CSS</span><span>95%</span></div>
+                            <div class="bar"><span data-width="95%"></span></div>
+                        </div>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-brands fa-react" aria-hidden="true"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-label"><span>JavaScript / React</span><span>88%</span></div>
+                            <div class="bar"><span data-width="88%"></span></div>
+                        </div>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-brands fa-node-js" aria-hidden="true"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-label"><span>Node.js / FastAPI</span><span>82%</span></div>
+                            <div class="bar"><span data-width="82%"></span></div>
+                        </div>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-brands fa-java" aria-hidden="true"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-label"><span>Java / JavaFX</span><span>80%</span></div>
+                            <div class="bar"><span data-width="80%"></span></div>
+                        </div>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-label"><span>PostgreSQL / Oracle</span><span>78%</span></div>
+                            <div class="bar"><span data-width="78%"></span></div>
+                        </div>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-label"><span>IA &amp; Automatisation</span><span>75%</span></div>
+                            <div class="bar"><span data-width="75%"></span></div>
+                        </div>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-label"><span>Git / GitHub</span><span>90%</span></div>
+                            <div class="bar"><span data-width="90%"></span></div>
+                        </div>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-label"><span>Tests &amp; Cybersécurité</span><span>72%</span></div>
+                            <div class="bar"><span data-width="72%"></span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projets">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow eyebrow-accent">Réalisations</p>
+                    <h2>Projets récents.</h2>
+                    <p class="section-sub">Une sélection de projets full-stack, IA et IoT, au Congo et à l’international.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project reveal">
+                        <div class="project-img">
+                            <img src="images/Image4.jpg" alt="Media Care" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">Application santé</span>
+                            <h3>Media Care</h3>
+                            <p class="project-short">Téléconsultation médicale avec IA et Machine Learning.</p>
+                            <p class="project-long">Plateforme de suivi à distance des patients, avec recommandations intelligentes basées sur le ML.</p>
+                            <div class="tags"><span>React</span><span>IA</span><span>Python</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#contact">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-img">
+                            <img src="images/Weather Forecast Dashboard.jpg" alt="Erastop" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">IoT · 1er prix</span>
+                            <h3>Erastop, Océan Hackathon</h3>
+                            <p class="project-short">Système IoT de surveillance côtière, présenté en France.</p>
+                            <p class="project-long">React, FastAPI, PostgreSQL et ESP32. Présenté au DevFest RDC (Google Developer Groups).</p>
+                            <div class="tags"><span>React</span><span>FastAPI</span><span>ESP32</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#contact">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-img">
+                            <img src="images/Image1.jpg" alt="Finance personnelle IA" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">Desktop · IA</span>
+                            <h3>Finance personnelle IA</h3>
+                            <p class="project-short">Suivi et optimisation des dépenses avec intelligence artificielle.</p>
+                            <p class="project-long">Application Java / JavaFX connectée à Oracle Database pour analyser et optimiser le budget.</p>
+                            <div class="tags"><span>Java</span><span>JavaFX</span><span>Oracle</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#contact">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-img">
+                            <img src="images/rapport.jpg" alt="Automatisation n8n" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">Automatisation</span>
+                            <h3>Rapports de réunions (n8n)</h3>
+                            <p class="project-short">Google Meet vers génération et envoi automatique de rapports.</p>
+                            <p class="project-long">Workflow n8n qui structure les comptes-rendus et les envoie aux participants.</p>
+                            <div class="tags"><span>n8n</span><span>API</span><span>Automation</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#contact">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-img">
+                            <img src="images/Game Dashboard Design.jpg" alt="Projets freelance" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">Freelance</span>
+                            <h3>15+ projets clients (Fiverr)</h3>
+                            <p class="project-short">Sites et interfaces pour des clients internationaux.</p>
+                            <p class="project-long">Du design UI/UX à l’implémentation front-end, livrés de bout en bout.</p>
+                            <div class="tags"><span>HTML/CSS</span><span>JS</span><span>UI/UX</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#contact">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-img">
+                            <img src="images/Image2.jpg" alt="Portfolio" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">Web</span>
+                            <h3>Portfolio personnel</h3>
+                            <p class="project-short">Site vitrine responsive, HTML &amp; CSS purs.</p>
+                            <p class="project-long">Design épuré, accessible et mobile-first, sans dépendance JavaScript lourde.</p>
+                            <div class="tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/JBixx/Portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#accueil">Live</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="parcours" id="parcours">
+            <div class="container parcours-layout">
+                <aside class="parcours-side reveal">
+                    <p class="eyebrow eyebrow-accent">Parcours</p>
+                    <h2>Expériences &amp;<br>formations</h2>
+                    <p class="section-sub">
+                        Du CFI-CIRAS à Brazzaville aux hackathons internationaux,
+                        en passant par le freelance et le lead technique.
+                    </p>
+                    <div class="side-stats">
+                        <div><strong>2+</strong><span>Ans d’expérience</span></div>
+                        <div><strong>15+</strong><span>Projets livrés</span></div>
+                        <div><strong>5</strong><span>Distinctions</span></div>
+                    </div>
+                    <a href="#contact" class="btn btn-green">Me contacter <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </aside>
+
+                <div class="timeline">
+                    <article class="t-item reveal">
+                        <span class="t-dot t-dot-on" aria-hidden="true"></span>
+                        <div class="t-card">
+                            <div class="t-top">
+                                <h3>Tech Lead, Squad Développement</h3>
+                                <span class="badge-on">En poste</span>
+                            </div>
+                            <p class="t-org">Akieni Academy · Brazzaville</p>
+                            <p class="t-meta">Juin 2026 à aujourd’hui · Hybride</p>
+                            <p class="t-desc">Direction technique d’une squad, code reviews, mentoring et interventions ponctuelles.</p>
+                            <div class="tags"><span>Leadership</span><span>Code Review</span><span>Mentorat</span></div>
+                        </div>
+                    </article>
+
+                    <article class="t-item reveal">
+                        <span class="t-dot" aria-hidden="true"></span>
+                        <div class="t-card">
+                            <div class="t-top">
+                                <h3>Développeur Full-Stack, 1er Prix</h3>
+                            </div>
+                            <p class="t-org">Océan International Hackathon</p>
+                            <p class="t-meta">Octobre 2025 · International / France</p>
+                            <p class="t-desc">Erastop, système IoT de surveillance côtière. Présentation au DevFest RDC (GDG).</p>
+                            <div class="tags"><span>React</span><span>FastAPI</span><span>PostgreSQL</span></div>
+                        </div>
+                    </article>
+
+                    <article class="t-item reveal">
+                        <span class="t-dot" aria-hidden="true"></span>
+                        <div class="t-card">
+                            <div class="t-top">
+                                <h3>Développeur Web &amp; Designer</h3>
+                            </div>
+                            <p class="t-org">Freelance sur Fiverr</p>
+                            <p class="t-meta">Fév. 2024 à Mai 2025 · Remote</p>
+                            <p class="t-desc">Plus de 15 projets sur mesure pour des clients internationaux, du UI/UX au front-end.</p>
+                            <div class="tags"><span>HTML/CSS</span><span>JavaScript</span><span>UI/UX</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container contact-box reveal">
+                <div class="contact-left">
+                    <p class="eyebrow eyebrow-accent">Contact</p>
+                    <h2>Vous avez un projet<br>ou une opportunité ?</h2>
+                    <p class="section-sub">
+                        Disponible pour des missions remote, en freelance ou en collaboration.
+                        Brazzaville, République du Congo.
+                    </p>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:contact.jean.dev@gmail.com">contact.jean.dev@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+24269114606">+242 6 91 14 60 6</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <a href="https://wa.me/24269114606" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                        </li>
+                    </ul>
+                    <div class="contact-socials">
+                        <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/hirwa-jean-b242-" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="mailto:contact.jean.dev@gmail.com" method="post" enctype="text/plain">
+                    <label class="sr-only" for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required autocomplete="name">
+
+                    <label class="sr-only" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required autocomplete="email">
+
+                    <label class="sr-only" for="motif">Motif</label>
+                    <div class="select-wrap">
+                        <select id="motif" name="motif" required>
+                            <option value="" disabled selected>Sélectionnez un motif…</option>
+                            <option value="collaboration">Collaboration / projet</option>
+                            <option value="freelance">Mission freelance</option>
+                            <option value="emploi">Opportunité d’emploi</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+
+                    <label class="sr-only" for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Parlez-moi de votre projet…" required></textarea>
+
+                    <button type="submit" class="btn btn-green">Envoyer le message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+            <div class="container newsletter-box reveal">
+                <div class="newsletter-copy">
+                    <p class="eyebrow eyebrow-accent">Newsletter</p>
+                    <h2 id="newsletter-title">Restez informé de mes prochains projets</h2>
+                    <p>Une à deux fois par mois : nouveautés, retours d’expérience et opportunités. Pas de spam.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form" novalidate>
+                    <label class="sr-only" for="newsletter-email">Adresse email</label>
+                    <input type="email" id="newsletter-email" name="email" placeholder="votre@email.com" required autocomplete="email">
+                    <button type="submit" class="btn btn-green">S’inscrire</button>
+                    <p class="newsletter-msg" id="newsletter-msg" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#accueil" class="logo">Hirwa<span>JB</span></a>
+                <p>Développeur Full-Stack basé à Brazzaville. Solutions web, IA et automatisation.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#parcours">Parcours</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:contact.jean.dev@gmail.com">Email</a></li>
+                    <li><a href="tel:+24269114606">+242 6 91 14 60 6</a></li>
+                    <li><a href="https://wa.me/24269114606" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Réseaux</h4>
+                <div class="footer-socials">
+                    <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/hirwa-jean-b242-" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/24269114606" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Hirwa Jean Baptiste. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#accueil" class="back-top" id="back-top" aria-label="Retour en haut"><i class="fa-solid fa-chevron-up"></i></a>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
