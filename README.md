@@ -58,8 +58,7 @@ Portfolio/
 ├── style.css       # Styles + dark mode
 ├── script.js       # Menu, thème, animations, newsletter
 ├── images/         # Photos & visuels projets
-├── README.md
-└── critere.md      # Brief du projet académique
+└── README.md
 ```
 
 ---

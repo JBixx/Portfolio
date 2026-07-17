@@ -688,13 +688,22 @@ ul {
 .skill-label {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   font-size: 0.86rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
   gap: 0.5rem;
 }
 
-.skill-label span:last-child {
+.skill-label h4 {
+  font-family: var(--font);
+  font-size: inherit;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.skill-label span {
   color: var(--green);
   font-weight: 700;
 }
@@ -1201,7 +1210,7 @@ ul {
   max-width: 280px;
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-family: var(--display);
   color: #fff;
   font-size: 0.92rem;
