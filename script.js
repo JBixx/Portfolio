@@ -1,3 +1,4 @@
+/* Portfolio interactions: theme, menu, reveal, newsletter */
 (function () {
   "use strict";
 
@@ -128,7 +129,7 @@
     window.addEventListener(
       "scroll",
       function () {
-        if (window.scrollY > 420) backTop.classList.add("is-visible");
+        if (window.scrollY > 380) backTop.classList.add("is-visible");
         else backTop.classList.remove("is-visible");
       },
       { passive: true }
