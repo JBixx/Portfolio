@@ -1,4 +1,4 @@
-﻿# Portfolio — Hirwa Jean Baptiste
+﻿# Portfolio Hirwa Jean Baptiste
 
 Salut. Voici mon portfolio perso.
 
@@ -70,15 +70,6 @@ Portfolio/
 - **Animations au scroll** : Intersection Observer (respecte `prefers-reduced-motion`)
 - **Newsletter** : validation email côté client
 - **Responsive** : desktop, tablette, mobile
-
----
-
-## Contact
-
-- Email : [contact.jean.dev@gmail.com](mailto:contact.jean.dev@gmail.com)
-- Téléphone : [+242 6 91 14 60 6](tel:+24269114606)
-- GitHub : [JBixx](https://github.com/JBixx)
-- LinkedIn : [hirwa-jean-b242-](https://linkedin.com/in/hirwa-jean-b242-)
 
 ---
 
