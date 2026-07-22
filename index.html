@@ -25,8 +25,24 @@
 <body>
 
     <div id="loading-screen" aria-hidden="true">
-        <div class="loader-mark">JB</div>
-        <div class="loader-line"></div>
+        <div class="loader-grid" aria-hidden="true"></div>
+        <div class="loader-core">
+            <div class="loader-ring">
+                <svg viewBox="0 0 100 100" class="loader-svg">
+                    <circle class="loader-track" cx="50" cy="50" r="44"></circle>
+                    <circle class="loader-progress" cx="50" cy="50" r="44"></circle>
+                </svg>
+                <div class="loader-mark">JB</div>
+            </div>
+            <p class="loader-brand">HIRWA<span>SYS</span> // BOOT</p>
+            <div class="loader-terminal">
+                <p id="loader-status">> Initializing kernel…</p>
+            </div>
+            <div class="loader-bar-wrap">
+                <div class="loader-bar"><span id="loader-bar"></span></div>
+                <span class="loader-pct" id="loader-pct">0%</span>
+            </div>
+        </div>
     </div>
 
     <div class="nav-overlay" id="nav-overlay" hidden></div>
@@ -95,12 +111,16 @@
                 </div>
 
                 <div class="hero-visual reveal">
+                    <div class="hero-orbit" aria-hidden="true"></div>
                     <img class="hero-portrait" src="images/JBProfil-removebg-preview.png" alt="Portrait de Hirwa Jean Baptiste">
                     <div class="float-icon float-1" aria-hidden="true"><i class="fa-brands fa-react"></i></div>
                     <div class="float-icon float-2" aria-hidden="true"><i class="fa-brands fa-js"></i></div>
                     <div class="float-icon float-3" aria-hidden="true"><i class="fa-brands fa-python"></i></div>
                     <div class="float-icon float-4" aria-hidden="true"><i class="fa-brands fa-node-js"></i></div>
                     <div class="float-icon float-5" aria-hidden="true"><i class="fa-brands fa-java"></i></div>
+                    <div class="float-icon float-6" aria-hidden="true"><i class="fa-brands fa-html5"></i></div>
+                    <div class="float-icon float-7" aria-hidden="true"><i class="fa-brands fa-github"></i></div>
+                    <div class="float-icon float-8" aria-hidden="true"><i class="fa-solid fa-database"></i></div>
                 </div>
             </div>
         </section>
@@ -111,10 +131,6 @@
                     <div class="about-frame" aria-hidden="true"></div>
                     <div class="about-img">
                         <img src="images/IMG-20250405-WA0015.jpg" alt="Hirwa Jean Baptiste">
-                    </div>
-                    <div class="about-badge">
-                        <strong>2+</strong>
-                        <span>Ans<br>d’expérience</span>
                     </div>
                 </div>
 
@@ -131,9 +147,18 @@
                         de clients à l’étranger.
                     </p>
                     <ul class="about-points">
-                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Licence GL au CFI-CIRAS (2023–2026)</li>
-                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Stack : React, Node.js, FastAPI, Java, PostgreSQL</li>
-                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Tech Lead à Akieni Academy</li>
+                        <li>
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                            <span>Licence GL au CFI-CIRAS (2023–2026)</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                            <span>Stack : React, Node.js, FastAPI, Java, PostgreSQL</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+                            <span>Tech Lead à Akieni Academy</span>
+                        </li>
                     </ul>
                     <a href="#parcours" class="btn btn-green">En savoir plus</a>
                 </div>
@@ -214,9 +239,10 @@
                 </div>
 
                 <div class="projects-grid">
-                    <article class="project reveal">
+                    <a href="projets/media-care.html" class="project reveal">
                         <div class="project-img">
                             <img src="images/Image4.jpg" alt="Media Care" loading="lazy">
+                            <span class="project-view">Voir le projet <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
                         </div>
                         <div class="project-content">
                             <span class="project-cat">Application santé</span>
@@ -224,16 +250,13 @@
                             <p class="project-short">Téléconsultation médicale avec IA et Machine Learning.</p>
                             <p class="project-long">Plateforme de suivi à distance des patients, avec recommandations intelligentes basées sur le ML.</p>
                             <div class="tags"><span>React</span><span>IA</span><span>Python</span></div>
-                            <div class="project-links">
-                                <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href="#contact">Détails</a>
-                            </div>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="project reveal">
+                    <a href="projets/erastop.html" class="project reveal">
                         <div class="project-img">
                             <img src="images/weather-forecast.jpg" alt="Erastop" loading="lazy">
+                            <span class="project-view">Voir le projet <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
                         </div>
                         <div class="project-content">
                             <span class="project-cat">IoT · 1er prix</span>
@@ -241,16 +264,13 @@
                             <p class="project-short">Système IoT de surveillance côtière, présenté en France.</p>
                             <p class="project-long">React, FastAPI, PostgreSQL et ESP32. Présenté au DevFest RDC (Google Developer Groups).</p>
                             <div class="tags"><span>React</span><span>FastAPI</span><span>ESP32</span></div>
-                            <div class="project-links">
-                                <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href="#contact">Détails</a>
-                            </div>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="project reveal">
+                    <a href="projets/finance-ia.html" class="project reveal">
                         <div class="project-img">
                             <img src="images/Image1.jpg" alt="Finance personnelle IA" loading="lazy">
+                            <span class="project-view">Voir le projet <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
                         </div>
                         <div class="project-content">
                             <span class="project-cat">Desktop · IA</span>
@@ -258,16 +278,13 @@
                             <p class="project-short">Suivi et optimisation des dépenses avec intelligence artificielle.</p>
                             <p class="project-long">Application Java / JavaFX connectée à Oracle Database pour analyser et optimiser le budget.</p>
                             <div class="tags"><span>Java</span><span>JavaFX</span><span>Oracle</span></div>
-                            <div class="project-links">
-                                <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href="#contact">Détails</a>
-                            </div>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="project reveal">
+                    <a href="projets/rapports-n8n.html" class="project reveal">
                         <div class="project-img">
                             <img src="images/rapport.jpg" alt="Automatisation n8n" loading="lazy">
+                            <span class="project-view">Voir le projet <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
                         </div>
                         <div class="project-content">
                             <span class="project-cat">Automatisation</span>
@@ -275,16 +292,13 @@
                             <p class="project-short">Google Meet vers génération et envoi automatique de rapports.</p>
                             <p class="project-long">Workflow n8n qui structure les comptes-rendus et les envoie aux participants.</p>
                             <div class="tags"><span>n8n</span><span>API</span><span>Automation</span></div>
-                            <div class="project-links">
-                                <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href="#contact">Détails</a>
-                            </div>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="project reveal">
+                    <a href="projets/freelance.html" class="project reveal">
                         <div class="project-img">
                             <img src="images/game-dashboard.jpg" alt="Projets freelance" loading="lazy">
+                            <span class="project-view">Voir le projet <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
                         </div>
                         <div class="project-content">
                             <span class="project-cat">Freelance</span>
@@ -292,16 +306,13 @@
                             <p class="project-short">Sites et interfaces pour des clients internationaux.</p>
                             <p class="project-long">Du design UI/UX à l’implémentation front-end, livrés de bout en bout.</p>
                             <div class="tags"><span>HTML/CSS</span><span>JS</span><span>UI/UX</span></div>
-                            <div class="project-links">
-                                <a href="https://github.com/JBixx" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href="#contact">Détails</a>
-                            </div>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="project reveal">
+                    <a href="projets/portfolio.html" class="project reveal">
                         <div class="project-img">
                             <img src="images/Image2.jpg" alt="Portfolio" loading="lazy">
+                            <span class="project-view">Voir le projet <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
                         </div>
                         <div class="project-content">
                             <span class="project-cat">Web</span>
@@ -309,12 +320,8 @@
                             <p class="project-short">Site vitrine responsive, HTML &amp; CSS purs.</p>
                             <p class="project-long">Design épuré, accessible et mobile-first, sans dépendance JavaScript lourde.</p>
                             <div class="tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
-                            <div class="project-links">
-                                <a href="https://github.com/JBixx/Portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href="#accueil">Live</a>
-                            </div>
                         </div>
-                    </article>
+                    </a>
                 </div>
             </div>
         </section>

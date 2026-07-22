@@ -54,10 +54,11 @@ cd Portfolio
 
 ```
 Portfolio/
-├── index.html      # Page principale
-├── style.css       # Styles + dark mode
-├── script.js       # Menu, thème, animations, newsletter
-├── images/         # Photos & visuels projets
+├── index.html
+├── style.css
+├── script.js
+├── images/
+├── projets/        # Pages détail de chaque projet
 └── README.md
 ```
 

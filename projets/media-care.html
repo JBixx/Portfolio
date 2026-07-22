@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hirwa Jean Baptiste">
+    <meta name="description" content="Media Care — plateforme de téléconsultation médicale avec IA.">
+    <title>Media Care | Hirwa Jean Baptiste</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || (!t && matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+</head>
+<body class="page-project">
+    <header class="header">
+        <nav class="nav" aria-label="Navigation principale">
+            <a href="../index.html" class="logo">Hirwa<span>JB</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html#accueil">Accueil</a></li>
+                <li><a href="../index.html#apropos">À propos</a></li>
+                <li><a href="../index.html#projets">Projets</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Activer le mode sombre">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                </button>
+                <a href="../index.html#contact" class="nav-cta"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Contact</a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+                    <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="nav-overlay" id="nav-overlay" hidden></div>
+
+    <main>
+        <section class="pd-hero">
+            <div class="container">
+                <a href="../index.html#projets" class="pd-back reveal"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Retour aux projets</a>
+                <p class="eyebrow eyebrow-accent reveal">Application santé</p>
+                <h1 class="reveal">Media Care</h1>
+                <p class="pd-lead reveal">Téléconsultation médicale intelligente, conçue pour rapprocher patients et professionnels de santé grâce à l’IA.</p>
+                <div class="tags reveal"><span>React</span><span>Python</span><span>Machine Learning</span><span>API</span></div>
+            </div>
+        </section>
+
+        <section class="pd-cover reveal">
+            <div class="container">
+                <img src="../images/Image4.jpg" alt="Aperçu Media Care">
+            </div>
+        </section>
+
+        <section class="pd-body">
+            <div class="container pd-grid">
+                <article class="pd-card reveal">
+                    <h2>Le défi</h2>
+                    <p>Faciliter l’accès aux soins à distance dans un contexte où les déplacements et les délais d’attente freinent le suivi médical.</p>
+                </article>
+                <article class="pd-card reveal">
+                    <h2>La solution</h2>
+                    <p>Une plateforme de téléconsultation avec recommandations basées sur le Machine Learning, pour un suivi patient plus réactif et personnalisé.</p>
+                </article>
+                <article class="pd-card reveal">
+                    <h2>Résultats</h2>
+                    <ul>
+                        <li>Interface claire pour patients et médecins</li>
+                        <li>Suggestions intelligentes selon le profil clinique</li>
+                        <li>Architecture full-stack prête à évoluer</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="pd-cta">
+            <div class="container pd-cta-box reveal">
+                <h2>Intéressé par un projet similaire ?</h2>
+                <p>Parlons de votre idée. Je peux vous accompagner de la conception au déploiement.</p>
+                <div class="pd-cta-actions">
+                    <a href="../index.html#contact" class="btn btn-green">Me contacter</a>
+                    <a href="https://github.com/JBixx" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container"><p>&copy; 2026 Hirwa Jean Baptiste.</p></div>
+        </div>
+    </footer>
+    <script src="../script.js" defer></script>
+</body>
+</html>
